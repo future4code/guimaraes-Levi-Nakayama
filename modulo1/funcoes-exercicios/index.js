@@ -5,55 +5,81 @@
 //2 - A ela verifica se um elemento encontra na array, e é sensitivo.
 //2 - B i true ii - false iii - false
 
-//console.log('Eu sou o Levi, tenho 37 anos, moro em Ubatuca e nao sou estudante')
+//console.log('Eu sou o Levi, tenho 37 anos, moro em Ubatuba e nao sou estudante')
 
 //const nome = prompt('digite o seu nome')
-//const idade = Number(prompt('digite sua idade'))
+//const idade = prompt('digite sua idade')
 //const cidade = prompt('digite sua cidade')
 //const profissao = prompt('digite sua profissao')
 
-//console.log(`Èu sou ${nome}, tenho ${idade} anos, moro em ${cidade} e sou ${profissao}`)
 
-//let num1 = Number(prompt('digite um valor'))
-//let num2 = Number(prompt('digite um valor'))
-//const total = num1 + num2
+//function sobreMim() {
 
-//console.log(total)
+  //const nome = toString(nome)
+  //const idade = Number(idade)
+  //const cidade = toString(cidade) 
+  //const profissao = toString(profissao)
 
-//let num3 = Number(prompt('digite um valor'))
-//let num4 = Number(prompt('digite um valor'))
-//const comparar = num3 >= num4
-//console.log(comparar)
+  //return nome, idade, cidade, profissao
+//}
 
-//let num5 = Number(prompt('digite um valor'))
+//const frase = `Èu sou ${nome}, tenho ${idade} anos, moro em ${cidade} e sou ${profissao}`
+//console.log(frase)
 
-//const par = (num5%2) == 0
 
-//console.log(par)
-    
-//const mensagem = prompt('digite uma mensagem')
+//function somar(num1, num2){
+  //return num1+num2
 
-//const mensagemNova = mensagem.toUpperCase()
+//}
+//console.log(somar(1,2))
 
-//console.log(mensagemNova, mensagem.length)
+//function comparar(num2, num3){
+  //return num2 >= num3
+//}
+//console.log(comparar(5,5))
 
+//function par(num4){
  
-//let num6 = Number(prompt('digite um valor'))
-//let num7 = Number(prompt('digite um valor'))
+  //num4 = num4%2 === 0 
 
-//console.log(`numeros inseridos: ${num6} e ${num7}`)
+  //return num4
 
-//const soma = num6 + num7
-//console.log(soma)
+//}
 
-//const subtracao = num6 - num7
-//console.log(subtracao)
+//console.log(par(11))
 
-//const multi = num6 * num7
-//console.log(multi)
+//function mostraMensagem(texto){
 
-//const divisao = num6/num7
-//console.log(divisao)
+//texto = texto.length
+//texto = texto.toUpperCase()
+//  return texto
+//}
+
+//console.log(mostraMensagem("oi tudo bem"))
+
+//let num6 = Number(prompt(" "))
+//let num7 = Number(prompt(" ")) 
+
+//function somar(){
+  //  return num6 + num7    
+   // }
+
+  //function subtrair(){
+    //return num6 - num7
+  //}
+  
+ // function dividir(){
+   // return num6/num7
+  //}
+
+  //function multiplicar(){
+    //return num6*num7
+  //}
+  
+
+//console.log(somar(num6, num7),subtrair(num6,num7), dividir(num6, num7), multiplicar(num6,num7))
+
+  
 
 //desafios
 
@@ -66,7 +92,7 @@
 
    // return texto
 
-}
+
 //let texto1 = leitura(texto)
 
 //console.length(texto1)
