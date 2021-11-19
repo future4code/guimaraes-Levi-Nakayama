@@ -123,13 +123,24 @@ function retornaUltimoElemento(array) {
 function trocaPrimeiroEUltimo(array) {
   // implemente sua lógica aqui
 
-  return array.reverse()
+const primeiroElemento = array[0]
+const segundoElemento = array[array.length -1]
+
+array[0] = segundoElemento
+array[array.length -1] = primeiroElemento
+
+return array
+
 }
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
   // implemente sua lógica aqui
 
+
+   
+
+  
 }
 
 // EXERCÍCIO 13

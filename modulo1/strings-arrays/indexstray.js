@@ -62,7 +62,7 @@
 //const arrayExercicio = ['Banana','Morango','Abacaxi','Laranja','Ameixa']
 //const indiceAbacaxi = arrayExercicio.indexOf('Abacaxi')
 //const tamanho = arrayExercicio.length
-//console.log(`indice Abacaxo: ${indiceAbacaxi} e tamanho: ${tamanho}`)
+//console.log(`indice Abacaxi: ${indiceAbacaxi} e tamanho: ${tamanho}`)
 
 
-
+ 
