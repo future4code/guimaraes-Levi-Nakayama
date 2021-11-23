@@ -135,27 +135,4 @@ return array
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
-  // implemente sua lógica aqui
-
-
-   
-
-  
-}
-
-// EXERCÍCIO 13
-function checaRenovacaoRG() {
-  // implemente sua lógica aqui
-
-}
-
-// EXERCÍCIO 14
-function checaAnoBissexto(ano) {
-  // implemente sua lógica aqui
-
-}
-
-// EXERCÍCIO 15
-function checaValidadeInscricaoLabenu(){
-// implemente sua lógica aqui
-}
+  // implemente sua lógica
