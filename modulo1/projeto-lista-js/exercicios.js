@@ -134,5 +134,5 @@ return array
 }
 
 // EXERCÍCIO 12
-function checaIgualdadeDesconsiderandoCase(string1, string2) {
+function checaIgualdadeDesconsiderandoCase(string1, string2) {} 
   // implemente sua lógica
