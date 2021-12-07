@@ -1,0 +1,13 @@
+1 - ler com calma e atençao o enunciado, o texto.
+
+2 - juntar objetos que podem estar em uma array, depois separar os verbos para as funçoes e achar as condiçoes paro os elementos. 
+
+3 - separar os dados recebidos e depois criar funçoes para entradas e saídas. 
+
+4 - resolver o(s) problemas(s) sem precisar usar códigos, montando bem claro e desenhando o algoritmo para poder transformar em uma linguagem de programaçao. quais os passo que foram tomados para resolver.
+
+5 - finalmente fazer o código. escrever o código baseando no que foi escrito de acordo com o rascunho.
+
+6 - agora é testar o código, traduzir tudo que estiver em portugues para ingles para padronizar.
+
+7 - faça boas práticas da programaçao como: dê nomes especificos para funçoes e elementos, separando tudo certinho, comigo funcionaria com blocos e pesquisa, usar mta pesquisa para solucionar algo que ficou empacado.
