@@ -122,6 +122,8 @@ div:last-child {
 }
 
 table {
+    position: relative;
+    left: 450px;
     width: 60%;
 }
 
