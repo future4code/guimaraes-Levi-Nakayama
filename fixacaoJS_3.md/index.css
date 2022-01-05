@@ -75,6 +75,7 @@ div img {
 }
 
 .container {
+   
     height: 500px;
     text-align: center;
 }
@@ -136,10 +137,11 @@ td button {
 }
 
 td button:hover{
-    background-color: #f1d84896;
+    background-color: #f1d848;
 }
 
 .container-do-search {
+    
     margin-top: 20px;
     height: 100px;
 }
