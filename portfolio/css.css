@@ -242,3 +242,24 @@ body {
 #icons i {
     padding-left: 10px;
 }
+
+
+#botao-nav {
+    background: #eee;
+    height: 500px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #icone {
+    background: pink;
+    height: 100px;
+    width: 200px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
