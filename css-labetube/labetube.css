@@ -18,6 +18,7 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 100px;
+    
 }
 
 header > div{
@@ -48,4 +49,26 @@ main{
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr 1fr ;
     
+}
+
+@media screen and (min-width: 768px) {
+
+    main {
+        height: 600px;
+        height: 60vh;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    header {
+        height: 100px;
+        height: 60vh;
+        justify-content: center;
+    }
+
+    footer {
+        height: 600px;
+        height: 60px;
+        justify-content: center;
+    }
 }
