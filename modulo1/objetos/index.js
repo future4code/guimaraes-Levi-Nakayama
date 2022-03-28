@@ -27,25 +27,63 @@ const personagemUm = {
     profissao: "fazendeiro"
 }
 
-function contagem() {
-
-      return contagem.length   
+const personagemDois = {
+    nome: "Murilo",
+    idade: 40,
+    profissao: "programador"
 }
 
-console.log(personagemUm.nome,contagem(personagemUm.nome), personagemUm.idade, personagemUm.profissao, contagem(personagemUm.profissao))
+const contagem = (pessoa) => {
+
+let array = [pessoa.nome, pessoa.nome.length, pessoa.idade, pessoa.profissao, pessoa.profissao.length]
+
+return array
+
+}
+console.log(contagem(personagemUm))
+console.log(contagem(personagemDois))
 
 
-const carrinho = []
+let carrinho = []
 
-const frutas = [
+const banana = {
+    nome: "banana",
+    disponibilidade: true
+}
 
-    {frutinha = "laranja", disponivel = true}, 
-    {frutinha = "abacaxi", disponivel = true},
-    {frutinha = "banana", disponivel = true}
+const abacaxi = {
+    nome: "abacaxi",
+    disponibilidade: true
+}
 
-]
-const novoCarrinho = carrinho[push(frutas.frutinha[0], frutas.disponivel[0], frutas.frutinha[1], frutas.disponivel[1], frutas.frutinha[2], frutas.disponivel[2])]
+const laranja = {
+    nome: "laranja",
+    disponibilidade: true
+}
 
-console.log(novoCarrinho)
+const sacolao = (fruta) => {
+ carrinho.push(fruta)
 
+ return carrinho
+}
 
+console.log("carrinho",sacolao(abacaxi))
+console.log("carrinho", sacolao(laranja))
+console.log("carrinho", sacolao(laranja))
+
+const perguntaNome = prompt("qual o seu nome?")
+const perguntaIdade = prompt("qual a sua idade?")
+const perguntaProfissao = prompt("qual a sua profissao?")
+
+const perfil = () => {
+    
+    meuNome: perguntaNome
+    minhaIdade: perguntaIdade
+    minhaProfissao: perguntaProfissao
+    
+    return perfil
+}
+
+console.log(perfil(perguntaNome,perguntaIdade,perguntaProfissao))
+
+console.log(perfil)

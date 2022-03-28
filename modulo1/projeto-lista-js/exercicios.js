@@ -134,5 +134,63 @@ return array
 }
 
 // EXERCÍCIO 12
-function checaIgualdadeDesconsiderandoCase(string1, string2) {} 
-  // implemente sua lógica
+function checaIgualdadeDesconsiderandoCase(string1, string2) {
+  // implemente sua lógica aqui
+
+  let string6 = string1.toUpperCase(" ")
+  let string7 = string2.toUpperCase(" ")
+
+  let checaStringsMesmoTamanho = string6 === string7
+
+  return checaStringsMesmoTamanho
+}
+
+// EXERCÍCIO 13
+function checaRenovacaoRG() {
+  // implemente sua lógica aqui
+let anoAtual = Number(prompt('digite um valor'))
+let anoNascimento = Number(prompt('digite um valor'))
+
+let cincoCinco = (anoAtual - anoNascimento) <= 20
+let dezDez = (anoAtual - anoNascimento) >= 20 && dezDez <= 50
+let quinzeQuinze = (anoAtual - anoNascimento) >= 50
+
+let checaRenovacaoRG = cincoCinco || dezDez || quinzeQuinze
+
+return checaRenovacaoRG
+
+}
+
+// EXERCÍCIO 14
+function checaAnoBissexto(ano) {
+  // implemente sua lógica aqui
+
+  let anoBissexto = ano % 400 === 0 ;
+  let anoBissexto1 = ano % 4 === 0 && ano % 100 !== 0 ;
+  
+  let anoBissexto0 = anoBissexto || anoBissexto1 
+
+  return anoBissexto0
+  
+
+
+}
+
+// EXERCÍCIO 15
+function checaValidadeInscricaoLabenu(){
+// implemente sua lógica aqui
+
+let maiorDeIdade = prompt('tem mais de 18?')
+let medioCompleto = prompt('ensino medio completo?')
+let horarioCurso = prompt('tem disponibilidade exclusiva pro curso?')
+
+
+
+let aprovado = maiorDeIdade === sim || medioCompleto === sim || horarioCurso === 0
+let reprovado = maiorDeIdade === sim && maiorDeIdade === nao || medioCompleto === sim && medioCompleto === nao || horarioCurso === sim && horarioCurso === nao
+
+let checaValidadeInscricaoLabenu = aprovado || reprovado
+
+return checaValidadeInscricaoLabenu
+
+}
