@@ -10,6 +10,7 @@ const pessoa = {
     apelidos: ["gordo","lindao","brother"]
 }
 
+
 console.log(`Eu sou o ${pessoa.nome}, mas pode me chamar de: ${pessoa.apelidos[0]}, ${pessoa.apelidos[1]} ou ${pessoa.apelidos[2]}.`)
 
 const novaPessoa= {
