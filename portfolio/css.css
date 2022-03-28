@@ -1,0 +1,265 @@
+body {
+    background-image: url("img/fundo.png");
+}
+
+.conteudo {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.cabecalho {
+    width: 1200px;
+    margin: auto;
+    height: 50px;
+}
+
+.cabecalho a {
+    text-decoration: none;
+    color: white;
+    font-size: 18pt;
+    text-align: right !important;
+    padding: 10px;
+}
+
+.cabecalho a:hover {
+    color: rgb(70, 182, 219);
+}
+
+.menu_sup {
+    text-align: right !important;
+    margin-top: -27px;
+}
+
+#P {
+    font-size: 20pt;
+    color: rgb(70, 182, 219);
+    margin-top: 10px;
+}
+
+.home .text-center {
+    text-align: center;
+}
+
+.home img {
+    border-radius: 400px;
+    max-width: 200px;
+    margin-top: 30px;
+}
+
+.home h1 {
+    color: white;
+    font-size: 25pt;
+}
+
+.home h5 {
+    color: white;
+    font-size: 15pt;
+}
+
+.redesocial a i {
+    text-decoration: none;
+    color: white;
+    font-size: 20pt;
+    padding: 10px;
+}
+
+.redesocial a {
+    border: 1px solid gray;
+    padding: 10px;
+    padding-top: 20px;
+    margin: 5px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px gray;
+}
+
+.sobre {
+    display: flex;
+    color: white;
+}
+
+.sobre .box1 {
+    width: 800px;
+    border: 1px solid gray;
+    box-shadow: 2px 2px 1px gray;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+.sobre .box2 {
+    width: 380px;
+    border: 1px solid gray;
+    box-shadow: 2px 2px 1px gray;
+    margin-top: 40px;
+}
+
+.sobre p {
+    font-size: 14pt;
+}
+
+.sobre h2 {
+    text-align: center;
+}
+
+.b1,
+.b2,
+.b3,
+.b4 {
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 2px 2px 1px gray;
+    max-width: 270px;
+    padding-bottom: 20px;
+}
+
+.projeto {
+    color: white;
+}
+
+.projeto img {
+    border-radius: 5px;
+    max-width: 270px;
+}
+
+.projeto h2 {
+    text-align: center;
+}
+
+.projetos h2 {
+    text-align: center;
+    color: white;
+}
+
+.projeto .botaoP {
+    background-color: rgb(36, 136, 170);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(30, 131, 165);
+}
+
+.projeto a {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    margin-left: 97px;
+}
+
+.projeto .botaoP:hover {
+    background-color: rgb(13, 93, 119);
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(10, 56, 71);
+}
+
+
+/*PAGINA DE CONTATO*/
+
+.contato {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.contato h1 {
+    font-size: 20pt;
+    color: white;
+    margin-top: 40px;
+    margin-bottom: -10px;
+}
+
+.contato input {
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 10px;
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.contato input::placeholder {
+    color: white;
+    padding-left: 10px;
+}
+
+.contato textarea::placeholder {
+    color: white;
+    padding-left: 10px;
+}
+
+.contato textarea {
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 10px;
+    width: 400px;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.contato button {
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    font-size: 12pt;
+    border-radius: 5px;
+    border: none;
+}
+
+
+/*PAGINA DO PROJETO*/
+
+.projeto-galeria .content {
+    width: 100%;
+    margin-top: 20px;
+    height: 400px;
+    color: white;
+    clear: both;
+}
+
+.imgProjeto {
+    width: 40%;
+    height: 400px;
+    display: inline;
+}
+
+.imgProjeto h1 {
+    margin-left: 160px;
+}
+
+.conteudoProjeto {
+    width: 60%;
+    height: 400px;
+    margin-left: 430px;
+    margin-top: -330px;
+}
+
+.content #icons {
+    float: right;
+    font-size: 20pt;
+    margin-right: 40px;
+}
+
+#icons i {
+    padding-left: 10px;
+}
+
+
+#botao-nav {
+    background: #eee;
+    height: 500px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #icone {
+    background: pink;
+    height: 100px;
+    width: 200px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
