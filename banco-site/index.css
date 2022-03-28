@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Ubuntu:wght@500&display=swap');
+
+* {
+    margin:0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.barra-navegar {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px;
+}
+
+.logo-f4bank {
+    height: 100px;
+    width: 150px;
+    cursor: pointer;
+    margin: 50px 0;
+    
+}
+
+.logo-menu {
+    width: 25px;
+    cursor: pointer;
+    display: none;
+
+}
+
+.menu-navegar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+       
+}
+
+.menu-navegar ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.menu-navegar ul li a{
+    text-decoration: none;
+    color: grey;
+    font-size: 14px;
+} 
+.menu-navegar ul li a:hover{
+    color: #ff5ea2;
+}
+
+.coluna {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+    border-top: 1px solid #ff469f;
+
+}
+
+.coluna1 {
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+    
+}
+
+.coluna1 h2 {
+    font-size: 54px;
+}
+
+
+.coluna1 h3 {
+    font-size: 30px;
+    color: grey;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+
+.coluna1 h4{
+    margin: 30px 0;
+    font-size: 54px;
+    
+}
+
+.coluna1 p{
+    margin: 30px 0;
+    font-size: 54px;
+    
+}
+
+
+button {
+    width: 140px;
+    border: 0;
+    padding: 12px 10px;
+    outline: none;
+    color: whitesmoke;
+    background: linear-gradient(to right, #fb5283, #ff3527);
+    transition: width 0.5s ease;
+}
+
+button:hover {
+    width: 160px;
+    display: flex;
+    align-items: cent;
+    justify-content: space-between;
+}
+
+.coluna1::after{
+    content: '';
+    width: 10px;
+    height: 75%;
+    background: linear-gradient(#ff469f, #ff6062);
+    position: absolute;
+    left: -40px;
+    top: 8px;
+}
+
+.coluna2 {
+    position: relative;
+    flex-basis: 60%;
+    display: flex;
+    align-items: center;
+}
+
+.coluna2 .banco-digital{
+    width: 100%;
+
+}
+   .container-footer {
+       max-width: 1170px;
+       margin: auto;
+   }
+
+   ul {
+       list-style: none;
+   }
+
+   .footer {
+    background-color: #24262b;
+    padding: 70px 0;
+
+   }
+       
+
+   .row-footer {
+       display: flex;
+       flex-wrap: wrap;
+   }
+
+   .footer-col {
+       width: 25%;
+       padding: 0 15px;
+   }
+   
+   .footer-col h4 {
+       font-size: 18px;
+       color: grey;
+       text-transform: capitalize;
+       margin-bottom: 30px;
+       font-weight: 500;
+       font-family: 'Ubuntu', sans-serif; 
+       position: relative;
+   }
+
+   .footer-col h4::before {
+       content: '';
+       position: absolute;
+       left: 0;
+       bottom: -10px;
+       background-color: #e91e63;
+       height: 2px;
+       box-sizing: border-box;
+       width: 50px;
+   }
+
+   .footer-col ul il {
+       margin-bottom: 10px;
+   }
+
+   .footer-col ul li a{
+       font-size: 16px;
+       text-transform: capitalize;
+       color: grey;
+       text-decoration: none;
+       font-weight: 300;
+       color: #bbbbbb;
+       display: block;
+       transition: all 0.3s ease;
+   }
+
+   .footer-col ul li a:hover{
+       color: grey;
+       padding-left: 7px;
+   }
+
+   .footer-col .links-redes-sociais a{
+       display: inline-block;
+       height: 40px;
+       width: 40px;
+       background-color: grey;
+       margin: 0 10px 10px 0;
+       text-align: center;
+       line-height: 40px;
+       border-radius: 50%;
+       color: whitesmoke;
+       transition: all 0.5 ease;
+   }
+
+   .footer-col .links-redes-sociais a:hover{
+       color: grey;
+       background-color: whitesmoke;
+   }
+
+   /*responsive*/
+
+   @media only screen and (max-width:  700px) {
+
+    
+
+    .coluna {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+
+    }
+
+    .coluna2 {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+
+    .coluna2 .banco-digital {
+        width: 77%;
+    }
+
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+ 
+    .footer-col {
+         width: 100%;
+        margin-bottom: 30px;
+     }
+ }
+
+   }

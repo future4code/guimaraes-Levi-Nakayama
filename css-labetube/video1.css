@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+footer{
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    align-items: center;
+}
+
+header{
+    background-color: orange;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+header > div{
+    display: flex;
+}
+
+header img {
+    width: 30px;
+    padding: 0 20px;
+}
+
+
+
+.card img{
+    width: 100%;
+
+}
+
+.card {
+    text-align: center;
+}
+
