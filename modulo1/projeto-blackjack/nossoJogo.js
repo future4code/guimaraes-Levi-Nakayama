@@ -11,7 +11,7 @@
  * 
  */
 
- let jogarBlackJack = 0
+let jogarBlackJack = 0
 
  if(confirm("bora jogar um blackjack?")) {
        while (jogarBlackJack !== 1){
