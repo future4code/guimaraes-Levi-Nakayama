@@ -1,4 +1,3 @@
-/**
  * EXEMPLO DE UTILIZAÇÃO DA 'comprarCarta'
  * 
  * 
@@ -9,5 +8,5 @@
  * 
  * 
  * 
- */
+ *
 

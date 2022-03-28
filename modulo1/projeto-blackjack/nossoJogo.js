@@ -11,29 +11,37 @@
  * 
  */
 
-while(confirm("quer jogar outra rodada?")) {
+let jogarBlackJack = 0
 
-true 
-console.log("comprando carta.")
+ if(confirm("bora jogar um blackjack?")) {
+       while (jogarBlackJack !== 1){
+         const comprarPrimeiraCarta = comprarCarta();
+         const comprarSegundaCarta = comprarCarta();
+        let pontuacaoUsuario = comprarPrimeiraCarta.valor + comprarSegundaCarta.valor
+        console.log(`essa é a pontuacao do usuario:${comprarPrimeiraCarta.texto} ${comprarSegundaCarta.texto} = ${pontuacaoUsuario}`)
 
-function comprarCartaUsuario(array){
+        const comprarPrimeiraCartaComputador = comprarCarta()        
+        const comprarSegundaCartaComputador = comprarCarta()
+        let pontuacaoComputador = comprarPrimeiraCartaComputador.valor + comprarSegundaCartaComputador.valor
+        console.log(`essa é a pontuacao do cpu: ${comprarPrimeiraCartaComputador.texto} ${comprarSegundaCartaComputador.texto} = ${pontuacaoComputador}`)
+        
+         if(pontuacaoUsuario > pontuacaoComputador){
+          console.log("usuario ganhou.")
 
-   for(let comprar of array) {
+
+          jogarBlackJack = 1
+        } else if(pontuacaoUsuario == pontuacaoComputador){
+          console.log("empate.")
+        } 
+        else{
+          console.log("cpu ganhou")
+          jogarBlackJack = 1
+      }
+
+      }
 
 
-   }
-
+} else {
+  console.log("game over.")
 }
-false
-console.log("game over")
-}
-
-const comprarCartaUm(carta) = { 
-nome: carta.texto
-valor = carta.valor
-}
-
-const comprarCartaDois(carta) = {
-nome: carta.texto
-valor = carta.valor
-}    
+   

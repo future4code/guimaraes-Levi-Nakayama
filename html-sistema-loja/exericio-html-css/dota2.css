@@ -1,0 +1,33 @@
+h2 {
+    color: whitesmoke;   
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    width: 100vh;
+     background-image: url(https://cdn1.dotesports.com/wp-content/uploads/sites/3/2020/06/20180159/345f508f5b58522b2ca2b5c19253b005_720.jpg);
+     background-size: cover;
+    }
+
+h3 {
+    color: whitesmoke;   
+    text-align: center;
+    position: relative;
+    height: 100vh;
+    width: 100vh;
+    text-align: center;
+    background-image: url(https://cdn.ome.lt/J2lg2hHcqtiiahD_mUs12fGktww=/970x360/smart/uploads/conteudo/fotos/theinternational_E3BJxN0.jpg);
+    background-size: cover;
+}
+
+h4 {
+    position: relative;
+    height: 80vh;
+    width: 80vh;
+    background-image: url(./imagens/força.jpeg);
+    background-position: cover;
+}
+
+h5 {
+
+    text-align: center;
+}
