@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import axios from "axios";
+import react from "react";
+import { useState } from "react/cjs/react.production.min";
+import { goTripDetail } from "../routes/Coordinator";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const [trip, loadTrip, errTrip] = userRequestData(`${BASE_URL}/trips`);
+const [tripDetail, setTripDetail] = useState(undefined);
+const theTrips = trip?.trips;
 
-export default App;
+const listTripId = theTrips?.map(nameId) => {
+  const goTripDetail = () => {
+    const tripId = nameId.id;
+    const headers = {
+      headers: {
+        auth. localStorage.getItem('token'),
+      },
+    };
+    axios
+      .get(`${BASE_URL}/trip/${tripId}`, headers)
+      .then((res) =>{
+        setTripDetail(res.data.trip);
+        navigate(`/detail/${tripId}`)
+      })
+      .catch(err)
+  };
+};
+
+return (
+  <label tripDetail={tripDetail} onClick={ () => goTripDetail(navigate)} key={nameId.id}>
+    { nameId.name }
+  </label>
+)
