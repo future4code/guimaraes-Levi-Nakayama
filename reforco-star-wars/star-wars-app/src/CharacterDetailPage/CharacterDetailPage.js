@@ -1,31 +1,39 @@
 import react, { useEffect, useState, useContext } from "react";
 import { useParams } from 'react-router-dom';
 import './CharacterDetailPage.css';
-
-
+import axios from 'axios';
+import { BASE_URL, goToCharacterDetailPage } from "../constants/urls";
+import { ThemeConsumer } from "styled-components";
 
 const CharacterDetailPage = () => {
-    const [swDetails, setSwDetails ] = useState(null);
-    const { name } = useParams();
+    
+    const [details, setDetails] = useState({})
+    const params = useParams()
 
     useEffect(() => {
-        fetch(`https://swapi.dev/api/people/`)
-        .then((r) => r.json())
-        .then((json) => {
-            setSwDetails(json);
-        });
-    }, [name]); 
+        getDetail()
+    }, [])
 
-    if (!swDetails) {
-        return null;
+    const getDetail = () => {
+        axios.get(`${BASE_URL}/people/${params.i}`)
+        .then((res) => {
+            setDetails(res.data)
+        })
+        .catch((err) => { console.log(err) })
     }
-    return (
-        <div className="DetalhesSw">
-            <h1>{swDetails.name}</h1>
 
+    return (
+        <div>
+            <h1>Detalhes dos personagens</h1>
+            <h2>Nome: { details.name }
+                Data de nascimento: { details.birth_name }
+                Sexo: { details.gender }
+                Altura: { details.height }
+                Massa: { details.mass }
+            </h2>
         </div>
     )
-
 }
+
 
 export default CharacterDetailPage
