@@ -15,11 +15,12 @@ const CharacterListPage = () => {
    
     
     const [characterList, setCharacterList] = useState([])
-
+    const [planetList, setPlanetList] = useState([])
     
 
     useEffect(()=> {
         getCharacterList()
+        getPlanetList()
     }, [])
     
     const getCharacterList = () => {
@@ -27,6 +28,14 @@ const CharacterListPage = () => {
         .get(`${BASE_URL}/people`)
         .then((res) => setCharacterList(res.data.results))
         .catch((err) => console.log('error', err))
+    }
+
+    const getPlanetList = () => {
+        axios
+        .get(`${BASE_URL}/planets`)
+        .then((res) => setPlanetList(res.data.results))
+        .catch((err) => console.log('error', err))
+
     }
 
     const onClickCard = (i) => {

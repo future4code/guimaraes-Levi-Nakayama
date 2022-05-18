@@ -1,9 +1,9 @@
-import react, { useEffect, useState, useContext } from "react";
+import react, { useEffect, useState } from "react";
 import { useParams } from 'react-router-dom';
 import './CharacterDetailPage.css';
 import axios from 'axios';
-import { BASE_URL, goToCharacterDetailPage } from "../constants/urls";
-import { ThemeConsumer } from "styled-components";
+import { BASE_URL } from "../constants/urls";
+
 
 const CharacterDetailPage = () => {
     
@@ -25,11 +25,14 @@ const CharacterDetailPage = () => {
     return (
         <div>
             <h1>Detalhes dos personagens</h1>
-            <h2>Nome: { details.name }
+            <h2>
+                Foto: {  }
+                Nome: { details.name }
                 Data de nascimento: { details.birth_name }
                 Sexo: { details.gender }
                 Altura: { details.height }
                 Massa: { details.mass }
+                Planet: {details.homeworld }
             </h2>
         </div>
     )
