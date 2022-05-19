@@ -31,8 +31,7 @@ const CharacterDetailPage = () => {
                 Data de nascimento: { details.birth_name }
                 Sexo: { details.gender }
                 Altura: { details.height }
-                Massa: { details.mass }
-                Planet: {details.homeworld }
+              
             </h2>
         </div>
     )
