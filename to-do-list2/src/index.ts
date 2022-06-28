@@ -1,55 +1,68 @@
 import { app } from "./app";
 import { Request, Response} from "express";
+import { connection } from "./connection";
+
+//ex. 02
+app.get('/user/search', async (req: Request, res: Response) => {
+  let errorCode = 400  
+
+  try {
+      const name = req.params.name
+
+      const result = await connection('users')
+      .select('*')
+      .where('name', name)
+
+      if(!result){
+        throw new Error('Coloca algum nome pra procurar...')
+      }
+      
+      
+      res. status(200).send(result)
+
+  } catch (error: any) {
+      res.status(errorCode).send('deu ruim.')
+  }
+});
+
 
 
 //ex. 01
 app.post('/user', async (req: Request, res: Response) => {
-    try {
-      await createUser(
-        req.body.name,
-        req.body.nickname,
-        req.body.email,
-    );
+  let errorCode = 400
+
+  try {
+      
+      const name =  req.body.name
+      const nickname = req.body.nickname
+      const email =  req.body.email
+
+      if(!name || !nickname || !email){
+        throw new Error('Faltam parametros.')
+      }
+
+      await connection('TodoListUser')
+      .insert({
+        id: Math.random().toString(),
+        name: name,
+        nickname: nickname,
+        email: email
+      })
+      
   
       res.status(200).send();
     } catch (err) {
-      res.status(400).send({
-        res.status(400).send("Deu algum erro na requisição.")
-      });
+      res.status(errorCode).send("errorCode")
     }
   });
 
-//ex. 02
-app.get('/user/search', (req: Request, res: Response) => {
-    let errorCode = 400
-
-    try {
-        const id = Number(req.params.id)
-
-        const idFiltered = user.filter((u) => {
-            if(u.id === id){
-                return u
-            }
-        })
-
-        if(idFiltered.length === 0){
-            errorCode = 404
-            throw new Error("Id não consta no banco de Dados");
-        }
-
-        res. status(200).send(idFiltered)
-
-    } catch (error: any) {
-        res.status(errorCode).send(error.message)
-    }
-})
 
 //ex. 03
 
 app.put('/user/edit/:id', (req: Request, res: Response) => {
     try {
         const updateUser = async (name: string, nickname: string): Promise<any> => {
-            await connection("User")
+            await connection('TodoListUser')
               .update({
                 nickname: nickname,
               })
@@ -63,23 +76,36 @@ app.put('/user/edit/:id', (req: Request, res: Response) => {
 //ex. 04
 app.post('/task', async (req: Request, res: Response) => {
     try {
-      await createUser(
-        req.body.title,
-        req.body.description,
-        req.body.limitDate,
-        req.body.creatorUserId
-    );
+
+      const taskId = req.body.taskId
+      const title = req.body.title
+      const description = req.body.description
+      const limitDate = req.body.limitDate
+      const status = req.body.status
+      const creatorUserId = req.body.id
+      const creatorUserNickname = req.body.nickname
+
+
+      await connection('TodoListTask')
+      .insert({
+        taskId: Math.random().toString(),
+        title: title,
+        description: description,
+        limitDate: limitDate,
+        status: status,
+        creatorUserId: creatorUserId, 
+        nickname: creatorUserNickname
+        
+      })
   
       res.status(200).send();
     } catch (err) {
-      res.status(400).send({
-        res.status(400).send("Deu algum erro na requisição.")
-      });
-    }
-  });
+      res.status(400).send("Deu algum erro na requisição.")
+      };
+    });
 
   //ex. 05
-  app.get('/task/:id', (req: Request, res: Response) => {
+  /*app.get('/task/:id', (req: Request, res: Response) => {
     let errorCode = 400
 
     try {
@@ -101,4 +127,4 @@ app.post('/task', async (req: Request, res: Response) => {
     } catch (error: any) {
         res.status(errorCode).send(error.message)
     }
-})
+})*/
