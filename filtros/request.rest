@@ -1,0 +1,18 @@
+// padrão
+GET http://localhost:3003/users
+###
+// filtro query
+GET http://localhost:3003/users?name=Soter
+###
+// filtro path
+GET http://localhost:3003/users/Soter
+###
+// ordenação
+GET http://localhost:3003/users?sort=name&order=ASC
+###
+// paginação
+GET http://localhost:3003/recipes
+###
+// todos juntos
+GET http://localhost:3003/recipes
+
