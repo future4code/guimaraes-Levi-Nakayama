@@ -1,7 +1,7 @@
-### 
+### Buscar todos os usuarios
 GET http://localhost:3003/users 
 
-###
+### Criar usuario
 PUT http://localhost:3003/users
 Content-Type: application/json
 
@@ -11,6 +11,21 @@ Content-Type: application/json
     "password": "naotemsenha"
 
 }
+
+### Buscar todos os produtos
+GET http://localhost:3003/products 
+
+
+### Criar produto
+PUT http://localhost:3003/products   
+Content-Type: application/json
+
+{
+    "name":"Razer Blade 17 - UHD 144Hz - GeForce RTX 3070 Ti - Black",
+    "price": 3799.99 ,
+    "img_url":"https://www.razer.com/gaming-laptops/Razer-Blade-17/RZ09-0423QEF3-R3U1"
+}
+
 
 ###
 DELETE http://localhost:3003/users/2

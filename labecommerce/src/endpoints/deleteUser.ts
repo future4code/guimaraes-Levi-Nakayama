@@ -1,18 +1,24 @@
 import { Request, Response } from "express";
-import { users } from "../data";
+import { connection } from "../connection";
 
-export default function deleteUser(
+
+export default async function deleteUser(
     req: Request,
     res: Response
-):void{
+): Promise<void>{
+    try {
+
     const { id } = req.params
     
-    const index:number = users.findIndex(
-        users => users.id === Number(id)
-    )
-    
-    if(index > -1)
-    users.splice(index, 1)
+    await connection("labecommerce_users")
+    .delete()
+    .where({ id })
 
     res.status(200).end()
+
+    } catch (error: any){
+
+        res.status(500).end()
+
+    }
 }

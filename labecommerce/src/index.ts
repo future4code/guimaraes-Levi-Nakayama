@@ -1,8 +1,15 @@
 import { app } from "./app";
+import createProduct from "./endpoints/createProduct";
 import createUser from "./endpoints/createUser";
 import deleteUser from "./endpoints/deleteUser";
+import getAllProducts from "./endpoints/getAllProducts";
 import getAllUsers from "./endpoints/getAllUsers"
 
 app.get("/users" , getAllUsers)
-/*app.put("/users", createUser)
-app.delete("/users/:id", deleteUser)*/
+app.put("/users", createUser)
+
+app.get("/products", getAllProducts)
+app.put("/products", createProduct)
+
+app.delete("/users/:id", deleteUser)
+
