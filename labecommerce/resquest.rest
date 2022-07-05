@@ -6,8 +6,8 @@ PUT http://localhost:3003/users
 Content-Type: application/json
 
 {
-    "name": "Jason",
-    "email": "jason@jason.com",
+    "name": "Robinho",
+    "email": "robinho@robinho.com",
     "password": "naotemsenha"
 
 }
@@ -21,11 +21,25 @@ PUT http://localhost:3003/products
 Content-Type: application/json
 
 {
-    "name":"Razer Blade 17 - UHD 144Hz - GeForce RTX 3070 Ti - Black",
-    "price": 3799.99 ,
-    "img_url":"https://www.razer.com/gaming-laptops/Razer-Blade-17/RZ09-0423QEF3-R3U1"
+    "name":"Razer Blade 14 - Full HD 144Hz - GeForce RTX 3060 - Black",
+    "price": 1999.99 ,
+    "img_url":"https://www.razer.com/gaming-laptops/Razer-Blade-14-/RZ09-0427EE23-R3U1"
 }
 
 
 ###
 DELETE http://localhost:3003/users/2
+
+### Criar purchase
+PUT http://localhost:3003/purchase
+Content-Type: application/json
+
+{
+    "user_id": "1",
+    "product_id": "1",
+    "quantity": "3"
+
+}
+
+
+

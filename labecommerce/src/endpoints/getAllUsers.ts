@@ -9,8 +9,7 @@ export default async function getAllUsers(
 ): Promise<void> {
     try {
         
-        const name = req.query
-    
+          
         const user: labe_users[] = await connection("labecommerce_users")
         
         res.send(user)
