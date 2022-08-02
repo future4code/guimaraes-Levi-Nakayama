@@ -1,6 +1,6 @@
 import { app } from "./controller/app"
-import { taskRouter } from "./controller/routes/taskRouter"
-import { userRouter } from "./controller/routes/userRouter"
+import { taskRouter } from "./routes/taskRouter"
+import { userRouter } from "./routes/userRouter"
 
 
 

@@ -1,16 +1,18 @@
 import { Request, Response } from "express";
 import { TaskBusiness } from "../business/TaskBusiness";
+import { TaskInputDTO } from "../model/taskDTO";
 
 export class TaskController {
   public createTask = async (req: Request, res: Response) => {
     try {
       const { title, description, deadline, authorId } = req.body;
 
-      const input = {
+      const input: TaskInputDTO = {
         title,
         description,
         deadline,
         authorId,
+        id: ""
       };
 
       const taskBusiness = new TaskBusiness();
