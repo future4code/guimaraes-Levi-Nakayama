@@ -1,5 +1,5 @@
 import { PostDatabase } from "../data/PostDatabase";
-import { PostInputDTO } from "../model/postDTO";
+import { PostInputDTO } from "../interfaces/postDTO";
 import { generateId } from "../services/generateId";
 
 export class PostBusiness {
@@ -25,6 +25,24 @@ export class PostBusiness {
             }); 
         } catch (error: any) {
             throw new Error(error.message);
+        }
+    };
+
+    public findPostById = async(idPost: string)=>{
+        try {
+           const postDatabase = new PostDatabase()
+           return await postDatabase.findPostById(idPost)
+        } catch (error: any) {
+            throw new Error(error.message);
+        }
+    };
+
+    public findPostFriendsByUserId = async(userId: string)=>{
+        try {
+            const postDatabase = new PostDatabase() 
+            return await postDatabase.findPostFriendsByUserId(userId)
+        } catch (error: any) {
+            return error
         }
     };
 }

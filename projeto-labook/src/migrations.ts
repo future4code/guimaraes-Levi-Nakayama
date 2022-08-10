@@ -19,7 +19,16 @@ class Migration extends BaseDatabase {
          createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
          author_id VARCHAR(255),
          FOREIGN KEY (author_id) REFERENCES labook_users (id)
-      )
+      );
+
+      CREATE TABLE IF NOT EXISTS labook_friends (
+         id VARCHAR(255) PRIMARY KEY,
+         idUserSolicitante VARCHAR(255),
+         idUserFriend VARCHAR(255),
+         createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+         FOREIGN KEY (idUserSolicitante) REFERENCES labook_users (id),
+         FOREIGN KEY (idUserFriend) REFERENCES labook_users (id)
+      );
    `)
    .then(console.log)
    .catch(console.log)

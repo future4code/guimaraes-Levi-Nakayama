@@ -1,7 +1,7 @@
 import { UserDatabase } from "../data/UserDatabase";
 import { CustomError } from "../error/CustomError";
 import { InvalidRequest } from "../error/InvalidRequest";
-import { UserInputDTO } from "../model/userDTO";
+import { UserInputDTO } from "../interfaces/userDTO";
 import { generateId } from "../services/generateId";
 
 export class UserBusiness {

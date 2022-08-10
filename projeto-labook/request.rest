@@ -1,21 +1,48 @@
+###Criar Usuário
 POST http://localhost:3003/user/create 
 Content-Type: application/json 
 
 {    
-    "name": "Alex",
-    "email": "123@gmail.com",
+    "name": "Levi",
+    "email": "levi@gmail.com",
     "password": "testando"
 }
 
-###
+###Criar Post
 POST http://localhost:3003/post/create 
 Content-Type: application/json 
 
 {
-    "id": "123",
-    "createAt": "04/08/2022",
+    
     "photo": "httppp...",
     "description": "ferias ferias",
-    "type": "normal",
-    "authorId" : "1"
+    "author_id" : "1660082084537"
+    
 }
+
+###Procurar Posts de usuários amigos
+GET http://localhost:3003/post/findPostFriendsByUserId/1659655148003
+Content-Type: application/json 
+
+###Procurar Post por ID
+GET http://localhost:3003/post/1660082084537
+Content-Type: application/json 
+
+###Criar Amizade
+POST http://localhost:3003/friends/create
+Content-Type: application/json 
+
+{
+    "idUserSolicitante": "1659655148003",
+    "idUserFriend": "1660082084537"
+}
+
+
+###Pegar todos os amigos
+GET http://localhost:3003/friends/all
+Content-Type: application/json 
+
+
+###Deletar Amizade
+DELETE http://localhost:3003/friends/1659655148003
+Content-Type: application/json 
