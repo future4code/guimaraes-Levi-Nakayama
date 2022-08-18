@@ -1,0 +1,19 @@
+# @name signup
+
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+   "name": "Robson",
+   "nickname": "IGBxDev",
+   "email": "osbourne@oscorp.com" ,
+   "password": "ihatepeter"
+}
+
+###
+GET http://localhost:3003/user/getUserByEmail/osbou22222rne@oscorp.com
+Content-Type: application/json
+
+{
+   "name": "Harry Osbourne" 
+}
