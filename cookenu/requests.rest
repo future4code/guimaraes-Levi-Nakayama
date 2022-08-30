@@ -1,0 +1,48 @@
+###
+POST http://localhost:3003/user/signup
+Content-Type: application/json
+
+{
+   "name": "Jacam", 
+   "email": "jacan@jacan.com",
+   "password": "masterchef"
+   
+}
+
+###
+POST http://localhost:3003/user/login
+Content-Type: application/json
+
+{
+
+   "email": "jacan@jacan.com",
+   "password": "masterchef"
+
+}
+
+###
+GET http://localhost:3003/user/profile
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijg4NzQxNTIzLTMxNjUtNDQ4OS1iZTkwLWJmNTZkYWIyZGZhYyIsImlhdCI6MTY2MTU0OTg5MiwiZXhwIjoxNjYxNjM2MjkyfQ.KS-TMQ01C9h5wZBxz98ArOB6rHtTjy2aJsTmTw1dOgY
+
+###
+GET http://localhost:3003/user/otherProfile/
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ijg4NzQxNTIzLTMxNjUtNDQ4OS1iZTkwLWJmNTZkYWIyZGZhYyIsImlhdCI6MTY2MTU0OTg5MiwiZXhwIjoxNjYxNjM2MjkyfQ.KS-TMQ01C9h5wZBxz98ArOB6rHtTjy2aJsTmTw1dOgY
+
+###
+POST http://localhost:3003/recipe/create
+Content-Type: application/json
+
+{
+ 
+   "title": "macarrão com alho e óleo",
+   "description": "macarrão com alho e óleo na frigideira",
+   "author_id": "88741523-3165-4489-be90-bf56dab2dfac",
+   "date": "01/01/2022"
+
+}
+
+###
+GET http://localhost:3003/recipe/findRecipeById/
+Content-Type: application/json
